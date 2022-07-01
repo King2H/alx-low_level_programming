@@ -1,31 +1,27 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Description: Print combinations of two digit numbers in ascending order.
- * Return: (0) for success
- */
-
+* main - Entry point
+* Description: Prints all combinations of two digits with,
+* and space followed by new line
+* Return: (0) for success
+*/
 int main(void)
 {
-	int i;
-	int j;
+	int num1, num2;
 
-	for (i = 0; i < 9; i++)
+	for (num1 = 0; num1 < 9; num1++)
 	{
-		for (j = i + 1; j < 10; j++)
+		for (num2 = num1 + 1; num2 < 10; num2++)
 		{
-			putchar((i % 10) + '0');
-			putchar((j % 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar((num2 % 10) + '0');
 
-			if (i == 8 && j == 9)
+			if (num1 == 8 && num2 == 9)
 				continue;
-			
 			putchar(',');
 			putchar(' ');
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
