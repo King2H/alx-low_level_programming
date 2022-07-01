@@ -1,23 +1,25 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: Print combinations of two digit numbers in ascending order
+ * Description: Print combinations of two digit numbers in ascending order.
  * Return: (0) for success
  */
+
 int main(void)
 {
 	int i;
 	int j;
 
-	for (i = 0; i < 9; i++) 
+	for (i = 0; i < 9; i++)
 	{
-		for (j = i + 1; j <= 9; j++) 
+		for (j = i + 1; j < 10; j++)
 		{
-			putchar(i + '0');
-			putchar(j + '0');
+			putchar((i % 10) + '0');
+			putchar((j % 10) + '0');
 
-			if (i == j && i > j) 
-				break;
+			if (i == 8 && j == 9)
+				continue;
+			
 			putchar(',');
 			putchar(' ');
 		}
