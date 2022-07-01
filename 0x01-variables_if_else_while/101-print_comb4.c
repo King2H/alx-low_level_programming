@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
-*main - Prints all combinations of three digits with,
+* main - Entry point
+* Description: Prints all combinations of three digits with,
 * and space followed by new line
-*
-*Return: returns 0
+* Return: (0) for success
 */
 int main(void)
 {
