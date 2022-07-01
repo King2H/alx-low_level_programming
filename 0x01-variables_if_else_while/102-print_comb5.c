@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
-*main - Prints all combinations of two two digits with,
-* and space followed by new line
+* main - Prints all combinations of two two digits with ,
+* followed by whitespace.
 *
-*Return: returns 0
+* Return: (0) for success
 */
 int main(void)
 {
@@ -13,6 +13,7 @@ int main(void)
 	{
 		for (num2 = num1 + 1; num2 <= 99; num2++)
 		{
+
 			putchar((num1 / 10) + '0');
 			putchar((num1 % 10) + '0');
 			putchar(32);
