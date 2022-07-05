@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - calls a function.
+ * main - call for main function.
  *
- * Return: 0.
+ * Return: Always 0.
  */
 int main(void)
 {
-    print_alphabet_x10();
-    return (0);
+	print_alphabet_x10();
+	return (0);
 }
