@@ -11,13 +11,12 @@ int main(void)
 	int y = 2;
 	long int sum = 0;
 
-	while (y <= 4000000) 
-	{
+	do {
 		if (y % 2 == 0)
 			sum += y;
 		y += x;
 		x = y - x;
-	}
+	} while (y <= 4000000);
 
 	printf("%ld\n", sum);
 
